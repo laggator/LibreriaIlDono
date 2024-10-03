@@ -158,7 +158,8 @@ footer .social img:hover, nav ul li:hover{
 
 main .title{
   width: 80%;
-  margin: 50px auto;
+  padding: 130px 0 50px 0;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -234,14 +235,6 @@ main .title h1{
   margin: 0 auto;
   max-width: 80%;
   padding: 10px 10px;
-}
-
-.eventi_prossimi .eventi .evento{
-  max-width: 30%;
-}
-
-.evento{
-  max-width: 30%;
 }
 
 .evento .image img{
@@ -377,11 +370,11 @@ input:checked ~ .accordion-content {
   }
 
   .nuoviarrivi .libro{
-    width: 40%
+    width: 45%
   }
 
   .nuoviarrivi .libri{
-    gap: 50px;
+    gap: 23px;
   }
 
   .archivio{
@@ -406,7 +399,7 @@ input:checked ~ .accordion-content {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 45px;
     justify-content: center;
     align-items: baseline;
     padding: 30px 0;
@@ -415,7 +408,7 @@ input:checked ~ .accordion-content {
   
   
   .nuoviarrivi .libro{
-    width: 23%
+    width: 25%
   }
 
   .info{
@@ -446,14 +439,23 @@ input:checked ~ .accordion-content {
     max-width: 70%;
     font-size: 20px;
   }
+  
+  .banner{
+    height: 600px;
+  }
 
   .banner .testo-logo{
-    font-size: 50px;
-    padding-top: 150px;
+    font-size: 35px;
+    padding-top: 80px;
+  
   }
 
   .eventi_passati .evento, .eventi_prossimi .evento{
     max-width: 100%;
+  }
+
+  main .title h1{
+    font-size: 35px;
   }
 
   
@@ -466,7 +468,11 @@ body{
 
 @media(min-width:1400px){ 
 
-  .evento{
+  .eventi_prossimi .evento{
+    max-height: 30%;
+  }
+
+  .eventi_passati .evento{
     max-width: 23%;
   }
 }
