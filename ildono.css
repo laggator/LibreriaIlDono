@@ -1,0 +1,470 @@
+*{
+  margin: 0;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.nunito-sans-font {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.libri img{
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+ 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+p{
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/**********HEADER**************/
+header{
+  width: 100%;
+}
+
+nav{
+  width: 100%;
+  background-color: #dfc5ac;
+  height: 80px;
+  position: fixed;
+  font-size: large;
+  z-index: 100;
+  box-shadow: 0 4px 4px -2px #dfc5ac;
+}
+
+ul{
+  padding-left: 0;
+  padding-top: 30px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+/************BANNER***********/
+
+.banner{
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  background-image: url('libraryfoto.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.banner .testo-logo{
+  font-size: 50px;
+  padding-top: 200px;
+}
+
+.testo-logo img{
+  width: 200px;
+}
+
+.banner .logo h3{
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.369);
+}
+
+.history .paragraph{
+  margin: 50px auto;
+  max-width: 80%;
+}
+
+
+.paragraph h4{
+  margin: 15px 0;
+}
+
+
+
+
+/****************FOOTER**************/
+
+
+footer{
+  margin-top: 150px;
+  text-align: center;
+  background-color: #dfc5ac;
+}
+
+footer .social img:hover, nav ul li:hover{
+  transform: scale(1.2);
+  transition: .3s;
+}
+
+.accordion:hover{
+
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+/*********LIBRI*********/
+
+.nuoviarrivi{
+  max-width: 100%;
+  margin: 0 auto;
+  background: #dfc5ac;
+  font-size: large;
+}
+
+main .title{
+  width: 80%;
+  padding: 130px 0 50px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .title h1{
+  font-size: 40px;
+}
+
+.nuoviarrivi .libri{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px 10px;
+  background-color: orange;
+}
+
+
+.nuoviarrivi .libro{
+  width: 65%
+}
+
+.nuoviarrivi .libro .image{
+  width: 100%;
+}
+
+.nuoviarrivi .libro .image img{
+  width: 100%;
+}
+
+.archivio{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.archivio a{
+  color: #4357ad;
+}
+
+/********EVENTI************/
+
+#eventi{
+  text-align: center;
+  padding-top: 80px;
+} 
+
+.eventi_passati, .eventi_prossimi{
+  background-color: #dfc5ac;
+  font-size: medium;
+}
+
+#eventi p{
+  margin: 0 auto;
+}
+
+#eventi .p{
+  margin: 0 auto;
+  max-width: 80%;
+  padding-bottom: 50px;
+}
+
+.eventi_passati .eventi, .eventi_prossimi .eventi{
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 10px 10px;
+}
+
+.evento .image img{
+  max-width: 100%;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.eventi p{
+  max-width: 100%;
+  font-size: larger;
+}
+
+.temporary-nav{
+  width: 100%;
+  background-color: #dfc5ac;
+  height: 80px;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+.eventi a{
+  color: #4357ad;
+}
+
+#eventi .h1{
+  margin: 50px ;
+}
+
+
+/*********INFO********/
+
+.info{
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info .indicazioni, .info .comefunziona{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.indicazioni a{
+  color: #4357ad;
+}
+
+.collab{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.collab img{
+  width: 100px;
+}
+
+.collab ul{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/************RESPONSIVE***************/
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordion {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.accordion-label {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  cursor: pointer;
+  background: #dfc5ac;
+}
+
+.accordion-content {
+  font-size: medium;
+  max-height: 0;
+  padding: 0 1em;
+  background: white;
+  transition: all 0.35s;
+}
+
+input:checked ~ .accordion-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+@media(min-width:600px){
+
+  nav{
+    width: 100%;
+    background-color: #dfc5ac;
+    height: 80px;
+    position: fixed;
+    font-size: 24px;
+  }
+  
+  
+  ul{
+    padding-left: 0;
+    padding-top: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  
+  }
+  
+  li{
+    list-style: none;
+    display: inline-block;
+    border-radius: 15px;
+  }
+  
+  li:hover{
+    color:white;
+  }
+
+  .nuoviarrivi .libro{
+    width: 45%
+  }
+
+  .nuoviarrivi .libri{
+    gap: 23px;
+  }
+
+  .archivio{
+    width: 65%;
+  }
+
+  .history .paragraph{
+    max-width: 60%;
+  }
+
+  .evento{
+    max-width: 47%;
+  }
+  
+}
+
+
+@media(min-width:968px){
+
+  .nuoviarrivi .libri{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 30px 0;
+    background-color: orange;
+  }
+  
+  
+  .nuoviarrivi .libro{
+    width: 25%
+  }
+
+  .info{
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .indicazioni a{
+    color: #4357ad;
+  }
+
+  .evento{
+    max-width: 30%;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .nuoviarrivi .libri .libro{
+    width: 100%;
+  }
+
+  .paragraph{
+    max-width: 70%;
+    font-size: 20px;
+  }
+  
+  .banner{
+    height: 600px;
+  }
+
+  .banner .testo-logo{
+    font-size: 35px;
+    padding-top: 80px;
+  
+  }
+
+  .eventi_passati .evento, .eventi_prossimi .evento{
+    max-width: 100%;
+  }
+
+  main .title h1{
+    font-size: 35px;
+  }
+
+  
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+}
+
+
+@media(min-width:1400px){ 
+
+  .eventi_prossimi .evento{
+    max-height: 30%;
+  }
+
+  .eventi_passati .evento{
+    max-width: 23%;
+  }
+}
+
+
+
+
+
