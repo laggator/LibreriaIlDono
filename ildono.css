@@ -7,29 +7,19 @@
   box-sizing: border-box;
 }
 
-.sorts-mill-goudy-regular {
-  font-family: "Sorts Mill Goudy", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.sorts-mill-goudy-regular-italic {
-  font-family: "Sorts Mill Goudy", serif;
-  font-weight: 400;
-  font-style: italic;
-}
 
 .montserrat-font {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
 }
 
 .nunito-sans-font {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -55,6 +45,7 @@ p{
 body{
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
+  font-weight: 300;
 }
 
 /**********HEADER**************/
@@ -64,12 +55,12 @@ header{
 
 nav{
   width: 100%;
-  background-color: deepskyblue;
+  background-color: #dfc5ac;
   height: 80px;
   position: fixed;
   font-size: large;
   z-index: 100;
-  box-shadow: 0 4px 4px -2px deepskyblue;
+  box-shadow: 0 4px 4px -2px #dfc5ac;
 }
 
 ul{
@@ -133,7 +124,7 @@ li{
 footer{
   margin-top: 150px;
   text-align: center;
-  background-color: deepskyblue;
+  background-color: #dfc5ac;
 }
 
 footer .social img:hover, nav ul li:hover{
@@ -152,7 +143,7 @@ footer .social img:hover, nav ul li:hover{
 .nuoviarrivi{
   max-width: 100%;
   margin: 0 auto;
-  background: deepskyblue;
+  background: #dfc5ac;
   font-size: large;
 }
 
@@ -210,7 +201,7 @@ main .title h1{
 } 
 
 .eventi_passati, .eventi_prossimi{
-  background-color: deepskyblue;
+  background-color: #dfc5ac;
   font-size: medium;
 }
 
@@ -249,7 +240,7 @@ main .title h1{
 
 .temporary-nav{
   width: 100%;
-  background-color: deepskyblue;
+  background-color: #dfc5ac;
   height: 80px;
   position: relative;
   color: rgb(0, 0, 0);
@@ -301,26 +292,27 @@ main .title h1{
 
 /************RESPONSIVE***************/
 
-
 input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
+
 .accordion {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
+
 .accordion-label {
   text-align: center;
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  font-weight: bold;
   cursor: pointer;
-  background: deepskyblue;
+  background: #dfc5ac;
 }
+
 .accordion-content {
   font-size: medium;
   max-height: 0;
@@ -328,21 +320,17 @@ input {
   background: white;
   transition: all 0.35s;
 }
+
 input:checked ~ .accordion-content {
   max-height: 100vh;
   padding: 1em;
 }
 
-
-
-
-
-
 @media(min-width:600px){
 
   nav{
     width: 100%;
-    background-color: deepskyblue;
+    background-color: #dfc5ac;
     height: 80px;
     position: fixed;
     font-size: 24px;
@@ -361,7 +349,6 @@ input:checked ~ .accordion-content {
   li{
     list-style: none;
     display: inline-block;
-    font-weight: bold;
     border-radius: 15px;
   }
   
